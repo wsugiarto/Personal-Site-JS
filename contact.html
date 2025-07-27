@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Wilson Sugiarto's personal site for recruiters and interviewers.">
+    <meta name="keywords"    content="Wilson, Sugiarto, Software, Computer Science, Recruiting">
+    <meta property="og:title"       content="Wilson's Personal Site">
+    <meta property="og:description" content="Wilson Sugiarto's personal site for recruiters and interviewers.">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Wilson's Personal Site</title>
+    
+</head>
+<body>
+    
+    <div id="button-container">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light mode">Toggle Theme</button>
+        <noscript>
+        JavaScript is off theme switcher unavailable.
+        </p>
+    </noscript>
+    </div>
+    
+    <header>
+        <h1>Wilson Sugiarto</h1>
+        <nav> 
+            <ul>
+                <li><a href="/about.html">about</a></li>
+                <li><a href="/credentials.html">credentials</a></li>
+                <li><a href="/contact.html">contact</a></li>
+                <li><a href="/lab.html">lab</a></li>
+            </ul>
+        </nav>
+        <details id="nav-menu">
+            <summary>Menu</summary>
+            <ul>
+                <li><a href="/about.html">about</a></li>
+                <li><a href="/credentials.html">credentials</a></li>
+                <li><a href="/contact.html">contact</a></li>
+                <li><a href="/lab.html">lab</a></li>
+            </ul>
+        </details>
+
+    </header>
+    
+    <main>
+        
+        <section>
+            <h1>Contact Information</h1>
+        </section>
+        
+        <section>
+            <address>
+                <dl>
+                    <dt>Phone:</dt> 
+                    <dd>+ 1 510 833 8212</dd>
+                    <dt>Email:</dt> 
+                    <dd><del>wsugiarto@ucsd.edu </del><ins>sugiarto.wilson@gmail.com</ins></dd>
+                    <dt>Github:</dt> 
+                    <dd>wsugiarto</dd>
+                    <dt>LinkedIn:</dt> 
+                    <dd>wilsonsugiarto</dd>
+                </dl>
+            </address>
+        </section>
+            
+    </main>
+    <footer>
+        <form id="contact-form" action="https://httpbin.org/post" method="post">
+            <fieldset>
+            <legend>Leave me a message</legend>
+            <label for="fullname-field">Full Name(*):</label>
+            <input type="text" name="fullname" id="fullname-field" title="Letters, spaces, hyphens or apostrophes only" pattern="[A-Za-z\s\-']+" required>
+            
+            <br>
+
+            <label for="email-field">Email(*):</label>
+            <input type="email" name="email" id="email-field"  title="Enter email Here" required>
+            
+            <br>
+            <label for="message-field">Message(*):</label>
+            <textarea name = message id="message-field" rows="5" placeholder="Leave your Message Here" minlength="10" maxlength="500" required></textarea>
+            <p id="message-count" class="char-count">Characters left: 500</p>
+            <br>
+
+            <input type="hidden" name="possible_bot" value=true>
+
+            <input type="hidden" name="form-errors" id="form-errors-field" value="">
+
+            <span id="name-error" class="error">Error: Please enter your full name (Letters, spaces, hyphens or apostrophes only)</span>
+            <span id="email-error" class="error">Error: Please enter a valid email</span>
+            <span id="message-error" class="error">Error: Please a message of reasonable length</span>
+            <p id="info">Info: </p>
+            <button type="submit">Submit</button>
+            </fieldset>
+        </form>
+        <table>
+            <caption>Schedule</caption>
+            
+            <tr>
+                <th><pre>Todos/
+Days</pre></th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+                <th>Sunday</th>
+            </tr>
+            <tr>
+                <td>Blank</td>
+                <td>sample activity</td>
+                <td>sample activity</td>
+                <td>sample activity</td>
+                <td>sample activity</td>
+                <td>sample activity</td>
+                <td>sample activity</td>
+                <td>sample activity</td>
+            </tr>
+            
+        </table>
+
+        <table id="mobile-schedule">
+            <caption>Schedule</caption>
+            
+            <tr>
+                <th><pre>Todos/
+Days</pre></th>
+                <th>Activities
+            </tr>
+            <tr>
+                <td>Monday</td>
+                <td></td>
+            </tr>
+            <tr><td>Tuesday</td><td></td></tr>
+                
+                <tr><td>Wednesday</td><td></td></tr>
+                <tr><td>Thursday</td><td></td></tr>
+                <tr><td>Friday</td><td></td></tr>
+                <tr><td>Saturday</td><td></td></tr>
+                <tr><td>Sunday</td><td></td></tr>
+            
+        </table>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
